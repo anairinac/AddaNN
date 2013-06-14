@@ -1,0 +1,13 @@
+Primero generamos archivos .o para cada cpp.
+
+	g++ -Wall -g -c Neuron.cpp
+	g++ -Wall -g -c NeuralNet.cpp
+	g++ -Wall -g -c main.cpp
+
+Luego creamos el ejecutable del programa.
+
+	g++ -g Neuron.o NeuralNet.o main.o -o AddaNN
+	
+Luego corremos el programa.
+
+	./AddaNN [parametros]
